@@ -1,0 +1,19 @@
+#intro {
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	background-image: linear-gradient(
+		to right bottom,
+		rgba(0, 0, 0, 0.681),
+		rgba(0, 0, 0, 0.381)
+	);
+}
+
+#intro .container {
+	height: 100%;
+}
+
+#hero {
+	padding: 3rem 0;
+	background-image: linear-gradient(to right bottom, #13547a 0%, #80d0c7 100%);
+}

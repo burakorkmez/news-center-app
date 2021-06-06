@@ -1,16 +1,80 @@
-html,
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,500&display=swap');
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.6rem;
+	color: #333;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* Utilities */
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
 }
 
-* {
-  box-sizing: border-box;
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.grid {
+	display: grid;
+	/* grid-template-columns: repeat(2, 1fr); */
+}
+
+.text-center {
+	text-align: center;
+}
+
+.mt-1 {
+	margin-top: 1rem;
+}
+.mt-2 {
+	margin-top: 2rem;
+}
+
+.mb-5 {
+	margin-bottom: 5rem;
+}
+
+.mt-3 {
+	margin-top: 3rem;
+}
+.mr-2 {
+	margin-right: 2rem;
+}
+.ml-2 {
+	margin-left: 2rem;
+}
+
+.mr-3 {
+	margin-right: 3rem;
+}
+.m-3 {
+	margin: 3rem;
+}
+
+.px-2 {
+	padding: 0 3rem;
+}
+.py-3 {
+	padding: 3rem 0;
+}
+@media (max-width: 800px) {
+	.flex {
+		flex-direction: column;
+	}
 }
