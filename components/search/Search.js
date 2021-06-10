@@ -15,6 +15,7 @@ const Search = ({ onFormSubmit }) => {
 
 	const handleChangeForCountry = (e) => {
 		setCountry(e.target.value);
+		console.log(2);
 	};
 
 	const handleChangeForCategory = (e) => {

@@ -16,8 +16,10 @@ export async function getStaticProps() {
 		'https://newsapi.org/v2/top-headlines?country=tr&category=sports&apiKey=4a6370d146f04df7bd7a04df993ea3be'
 	);
 	const data = await res.json();
+	console.log(data);
 
 	return {
 		props: { data },
+		revalidate: 3600,
 	};
 }

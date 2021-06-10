@@ -39,13 +39,11 @@ const NewsContainer = ({ news }) => {
 									key={eachNews.source.id}
 									title={eachNews.title}
 									urlToImage={eachNews.urlToImage}
-									publishedAt={new Date(
-										eachNews.publishedAt
-									).toLocaleDateString({
-										year: 'numeric',
-										month: 'long',
-										day: 'long',
-									})}
+									publishedAt={new Date(eachNews.publishedAt)
+										.toISOString()
+										.replace('-', '/')
+										.split('T')[0]
+										.replace('-', '/')}
 									description={eachNews.description}
 									urlToNews={eachNews.url}
 									author={eachNews.author}
